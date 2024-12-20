@@ -23,9 +23,9 @@ Este projeto é um **formulário interativo** que permite ao usuário inserir de
 - **CSS**: Estilo visual do formulário e do cartão, além de torná-lo responsivo.
 - **JavaScript**: Manipulação da lógica de validação e atualização da interface do usuário.
 
-## Funcionalidades Esperadas
+## Funcionalidades a implementar
 
-- **Rotação do cartão**: Implementar a funcionalidade de rotação do cartão. Ao passar o mouse sobre a parte da frente do cartão, a parte de trás deve aparecer com a informação do **CVC**.
+- **Rotação do cartão**: Ao passar o mouse sobre a parte da frente do cartão, a parte de trás deve aparecer com a informação do **CVC**.
 
 ## Contribuições
 
