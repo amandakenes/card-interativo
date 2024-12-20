@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Detalhes do Cartão Interativo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card-container">
+    <div class="card-front">
+      <div class="card-logo">
+        <img src="./images/card-logo.svg" alt="Logo do Cartão">
+      </div>
+      <div class="card-details">
+        <span id="card-number-display" class="card-number">0000 0000 0000 0000</span>
+        <div class="card-info">
+          <span id="card-name-display" class="card-name">Jane Appleseed</span>
+          <span id="card-expiry-display" class="card-expiry">00/00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <form id="card-form">
+        <h2>Detalhes do Cartão</h2>
+        
+        <label for="cardholder-name">Nome do Titular</label>
+        <input type="text" id="cardholder-name" placeholder="ex: Jane Appleseed" required>
+        <span id="name-error" class="error-message"></span>
+
+        <label for="card-number">Número do Cartão</label>
+        <input type="text" id="card-number" maxlength="19" placeholder="ex: 1234 5678 9123 0000" required>
+        <span id="number-error" class="error-message"></span>
+
+        <div class="expiry-cvc">
+          <div class="expiry">
+            <label for="expiry-date">Data de Validade (MM/AA)</label>
+            <input type="text" id="expiry-date" maxlength="5" placeholder="MM/AA" required>
+            <span id="expiry-error" class="error-message"></span>
+          </div>
+
+          <div class="cvc">
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" maxlength="3" placeholder="ex: 123" required>
+            <span id="cvc-error" class="error-message"></span>
+          </div>
+        </div>
+
+        <button type="submit" id="submit-btn">Confirmar</button>
+      </form>
+
+      <div id="completed-state" class="completed-state">
+        <img src="images/icon-complete.svg" alt="">
+        <h2>Obrigado!</h2>
+        <p>Adicionamos os detalhes do seu cartão</p>
+        <button id="continue-btn">Continuar</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Desafio por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Codificado por <a href="#">Amanda Kenes</a>.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
